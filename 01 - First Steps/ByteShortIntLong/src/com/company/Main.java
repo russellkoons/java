@@ -47,5 +47,7 @@ public class Main {
         int myInt = 57_415;
         long challengeTotal = 50000L + 10L * (myByte + myShort + myInt);
         System.out.println(challengeTotal);
+
+        short shortTotal = (short) (1000 + 10 * (myByte + myShort + myInt));
     }
 }
