@@ -92,9 +92,19 @@ public class Main {
         }
 
         isCar = true;
-        boolean wasCar = isCar ? true : false;
+        boolean wasCar = isCar ? true : false; // ternary operator
         if (wasCar) {
             System.out.println("wasCar is true");
+        }
+
+        double one = 20.00d;
+        double two = 80.00d;
+        double three = (one + two) * 100.00d;
+        double remainder = three % 40.00d;
+        boolean gotRemainder = remainder == 0 ? true : false;
+        System.out.println(gotRemainder);
+        if (!gotRemainder) {
+            System.out.println("Got some remainder");
         }
     }
 }
