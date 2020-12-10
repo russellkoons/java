@@ -51,5 +51,30 @@ public class Main {
             System.out.println("Beep boop");
             System.out.println("Bingity bing bong");
         }
+
+        int topScore = 99;
+        if (topScore == 100) {
+            System.out.println("You got the high score!");
+        }
+        if (topScore != 100) {
+            System.out.println("Ya goofed!");
+        }
+        if (topScore > 100) {
+            System.out.println("WHOOOOOOOAAAA!");
+        }
+        if (topScore >= 100) {
+            System.out.println("Nice!");
+        }
+        if (topScore < 100) {
+            System.out.println("sucky");
+        }
+        if (topScore <= 100) {
+            System.out.println("Aight");
+        }
+
+        int secondTopScore = 60;
+        if (topScore > secondTopScore && topScore < 100) {
+            System.out.println("Greater than second top score and less than 100");
+        }
     }
 }
