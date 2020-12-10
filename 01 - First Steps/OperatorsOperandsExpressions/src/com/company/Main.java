@@ -43,5 +43,13 @@ public class Main {
         // result = result - 2;
         result -= 2; // 10 - 2 = 8
         System.out.println("10 - 2 = " + result);
+
+        boolean isAlien = false;
+        if (isAlien == false) // can also be simplified to !isAlien, do not put semicolon at end of condition
+            System.out.println("It is not an alien"); // If you do two lines you need to wrap in curly braces
+        if (!isAlien) {
+            System.out.println("Beep boop");
+            System.out.println("Bingity bing bong");
+        }
     }
 }
