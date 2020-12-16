@@ -35,6 +35,8 @@ public class Main {
         }
     }
 
+    
+
     public static void displayHighScorePosition(String name, int position) {
         System.out.println(name + " managed to get into position " + position + " on the high score table");
     }
