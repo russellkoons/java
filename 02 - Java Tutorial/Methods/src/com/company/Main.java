@@ -15,20 +15,20 @@ public class Main {
 
         int position = calculateHighScorePosition(1500);
         displayHighScorePosition("Russell", position);
-        position = calculateHighScorePosition(900);
+        position = calculateHighScorePosition(1000);
         displayHighScorePosition("John", position);
-        position = calculateHighScorePosition(400);
+        position = calculateHighScorePosition(500);
         displayHighScorePosition("Steve", position);
-        position = calculateHighScorePosition(50);
+        position = calculateHighScorePosition(100);
         displayHighScorePosition("Natalie", position);
     }
 
     public static int calculateHighScorePosition(int score) {
         if (score > 1000) {
             return 1;
-        } else if (score > 500 && score < 1000) {
+        } else if (score > 500) {
             return 2;
-        } else if (score > 100 && score < 500) {
+        } else if (score > 100) {
             return 3;
         } else {
             return 4;
