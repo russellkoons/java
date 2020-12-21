@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println(getDurationString(65, 45));
+        System.out.println(getDurationString(3945));
     }
 
     private static String getDurationString(long minutes, long seconds) {
@@ -20,6 +21,6 @@ public class Main {
 
         long minutes = seconds / 60;
         long remainingSeconds = seconds % 60;
-        
+        return getDurationString(minutes, remainingSeconds);
     }
 }
