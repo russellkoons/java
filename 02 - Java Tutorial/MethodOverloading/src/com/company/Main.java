@@ -12,7 +12,7 @@ public class Main {
             System.out.println("Invalid parameters");
         }
 
-        calcFeetAndInchesToCentimeters(100);
+        calcFeetAndInchesToCentimeters(157);
     }
 
     public static int calculateScore(String name, int score) {
