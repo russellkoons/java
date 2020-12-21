@@ -24,4 +24,21 @@ public class Main {
         System.out.println("No player name or score");
         return 0;
     }
+
+    // You cannot do this
+//    public static void calculateScore() {
+//        System.out.println("No player name or score");
+//    }
+
+    public static double calcFeetAndInchesToCentimeters(double feet, double inches) {
+        if (feet < 0 || inches < 0 || inches > 12) {
+            return -1;
+        }
+    }
+
+    public static double calcFeetAndInchesToCentimeters(double inches) {
+        if (inches < 0) {
+            return -1;
+        }
+    }
 }
