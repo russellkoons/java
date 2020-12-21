@@ -4,9 +4,12 @@ public class Main {
         System.out.println(getDurationString(3909));
     }
 
+    // This is a constant. They are typed in uppercase to make them easier to identify
+    private static final String INVALID_VALUE_METHOD = "Invalid value";
+
     private static String getDurationString(long minutes, long seconds) {
         if (minutes < 0 || seconds < 0 || seconds > 59) {
-            return "Invalid value";
+            return INVALID_VALUE_METHOD;
         }
 
         long hours = (minutes / 60);
@@ -30,7 +33,7 @@ public class Main {
 
     private static String getDurationString(long seconds) {
         if (seconds < 0) {
-            return "Invalid value";
+            return INVALID_VALUE_METHOD;
         }
 
         long minutes = seconds / 60;
