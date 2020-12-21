@@ -13,6 +13,9 @@ public class Main {
         }
 
         calcFeetAndInchesToCentimeters(157);
+        System.out.println(sum(1, 2));
+        System.out.println(sum(3, 4, 5));
+        System.out.println(sum(6, 7, 8, 9));
     }
 
     public static int calculateScore(String name, int score) {
@@ -56,5 +59,17 @@ public class Main {
         double remainingInches = (int) inches % 12;
         System.out.println(inches + " inches is equal to " + feet + " feet and " + remainingInches + " inches");
         return calcFeetAndInchesToCentimeters(feet, remainingInches);
+    }
+
+    public static int sum(int a, int b) {
+        return a + b;
+    }
+
+    public static int sum(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static int sum(int a, int b, int c, int d) {
+        return a + b + c + d;
     }
 }
