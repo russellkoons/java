@@ -72,4 +72,11 @@ public class Main {
     public static int sum(int a, int b, int c, int d) {
         return a + b + c + d;
     }
+
+    public static int getDurationString(int minutes, int seconds) {
+        if (minutes < 0 || seconds < 0 || seconds > 59) {
+            System.out.println("Invalid value");
+            return -1;
+        }
+    }
 }
