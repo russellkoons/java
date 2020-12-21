@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println(getDurationString(65, 45));
         System.out.println(getDurationString(3909));
+        System.out.println(getDurationString(-41));
     }
 
     // This is a constant. They are typed in uppercase to make them easier to identify
