@@ -52,6 +52,7 @@ public class Main {
 
         String month = "JANUARY";
 
+	    // toUpperCase also works
 	    switch (month.toLowerCase()) {
             case "january":
                 System.out.println("Jan");
