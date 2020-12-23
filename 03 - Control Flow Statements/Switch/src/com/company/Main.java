@@ -36,7 +36,7 @@ public class Main {
                 break;
         }
 
-        char switchChar = 'A';
+        char switchChar = 'E';
 
 	    switch (switchChar) {
             case 'A': case 'B': case 'C': case 'D': case 'E':
@@ -45,6 +45,22 @@ public class Main {
 
             default:
                 System.out.println("A, B, C, D, or E were not found");
+                break;
+        }
+
+        String month = "January";
+
+	    switch (month) {
+            case "January":
+                System.out.println("Jan");
+                break;
+
+            case "June":
+                System.out.println("Jun");
+                break;
+
+            default:
+                System.out.println("Not sure");
                 break;
         }
     }
