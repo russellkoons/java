@@ -17,10 +17,17 @@ public class Main {
 	    switch (switchValue) {
             case 1:
                 System.out.println("Value was 1");
+                // break cuts the code and moves to end of the block
                 break;
 
             case 2:
                 System.out.println("Value was 2");
+                break;
+
+            // Can do multiple cases at once
+            case 3: case 4: case 5:
+                System.out.println("Value was 3 or 4 or 5");
+                System.out.println("Actually it was a " + switchValue);
                 break;
 
             // This is basically else
