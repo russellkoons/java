@@ -36,6 +36,16 @@ public class Main {
                 break;
         }
 
-        // more code here
+        char switchChar = 'A';
+
+	    switch (switchChar) {
+            case 'A': case 'B': case 'C': case 'D': case 'E':
+                System.out.println(switchChar + " was found");
+                break;
+
+            default:
+                System.out.println("A, B, C, D, or E were not found");
+                break;
+        }
     }
 }
