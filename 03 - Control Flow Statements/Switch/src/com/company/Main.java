@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Locale;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -48,14 +50,14 @@ public class Main {
                 break;
         }
 
-        String month = "January";
+        String month = "JANUARY";
 
-	    switch (month) {
-            case "January":
+	    switch (month.toLowerCase()) {
+            case "january":
                 System.out.println("Jan");
                 break;
 
-            case "June":
+            case "june":
                 System.out.println("Jun");
                 break;
 
