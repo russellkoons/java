@@ -1,10 +1,6 @@
 public class SumOddRange {
     public static boolean isOdd(int number) {
-        if (number < 0) {
-            return false;
-        }
-
-        if (number % 2 == 0) {
+        if (number < 0 || number % 2 == 0) {
             return false;
         }
 
