@@ -34,7 +34,7 @@ public class Main {
             if (count == 5) {
                 break;
             }
-            
+
             if ((i % 3 == 0) && (i % 5 == 0)) {
                 System.out.println(i);
                 sum += i;
