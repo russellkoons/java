@@ -27,6 +27,20 @@ public class Main {
                 }
             }
         }
+
+        int sum = 0;
+        count = 0;
+        for (int i = 1; i < 1000; i++) {
+            if (count == 5) {
+                break;
+            }
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println(i);
+                sum += i;
+                count++;
+            }
+        }
+        System.out.println(sum);
     }
 
     public static boolean isPrime(int n) {
