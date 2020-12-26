@@ -58,4 +58,15 @@ public class Main {
         }
         return false;
     }
+
+    public static int sumDigits(int number) {
+        if (number < 10) {
+            return -1;
+        }
+
+        int least = number % 10;
+        int most = number / 10;
+
+        return least + most;
+    }
 }
