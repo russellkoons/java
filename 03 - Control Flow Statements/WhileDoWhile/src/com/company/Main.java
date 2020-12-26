@@ -31,15 +31,20 @@ public class Main {
             count++;
         } while (count != 6);
 
-        int number = 4;
+        int number = 0;
         int finishNumber = 20;
+        count = 0;
 
         while (number <= finishNumber) {
             number++;
             if (!isEvenNumber(number)) {
+                // continue skips to the next iteration
                 continue;
             }
-
+            if (count == 5) {
+                break;
+            }
+            count++;
             System.out.println("Even number " + number);
         }
     }
