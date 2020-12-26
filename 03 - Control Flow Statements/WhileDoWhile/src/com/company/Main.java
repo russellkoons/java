@@ -23,5 +23,11 @@ public class Main {
             System.out.println("Count value is " + count);
             count++;
         }
+
+        count = 1;
+        do {
+            System.out.println("Count value is " + count);
+            count++;
+        } while (count != 6);
     }
 }
