@@ -24,10 +24,23 @@ public class Main {
             count++;
         }
 
+        // do while will always execute at least one time
         count = 1;
         do {
             System.out.println("Count value is " + count);
             count++;
         } while (count != 6);
+
+        System.out.println(isEvenNumber(2));
+        System.out.println(isEvenNumber(7));
+        System.out.println(isEvenNumber(28));
+    }
+
+    public static boolean isEvenNumber(int n) {
+        while (n % 2 == 0) {
+            return true;
+        }
+
+        return false;
     }
 }
