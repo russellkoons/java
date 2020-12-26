@@ -31,16 +31,23 @@ public class Main {
             count++;
         } while (count != 6);
 
-        System.out.println(isEvenNumber(2));
-        System.out.println(isEvenNumber(7));
-        System.out.println(isEvenNumber(28));
+        int number = 4;
+        int finishNumber = 20;
+
+        while (number <= finishNumber) {
+            number++;
+            if (!isEvenNumber(number)) {
+                continue;
+            }
+
+            System.out.println("Even number " + number);
+        }
     }
 
     public static boolean isEvenNumber(int n) {
-        while (n % 2 == 0) {
+        if (n % 2 == 0) {
             return true;
         }
-
         return false;
     }
 }
