@@ -50,7 +50,8 @@ public class Main {
                 break;
             }
         }
-        System.out.println(sumDigits(123));
+        System.out.println(sumDigits(125));
+        System.out.println(sumDigits(5368));
     }
 
     public static boolean isEvenNumber(int n) {
