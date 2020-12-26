@@ -50,6 +50,7 @@ public class Main {
                 break;
             }
         }
+        System.out.println(sumDigits(123));
     }
 
     public static boolean isEvenNumber(int n) {
@@ -64,9 +65,16 @@ public class Main {
             return -1;
         }
 
-        int least = number % 10;
-        int most = number / 10;
+        int sum = 0;
 
-        return least + most;
+        while (number > 0) {
+            // extract least significant digit
+            sum += number % 10;
+
+            // drop the least significant number
+            number /= 10;
+        }
+
+        return sum;
     }
 }
