@@ -41,11 +41,14 @@ public class Main {
                 // continue skips to the next iteration
                 continue;
             }
-            if (count == 5) {
-                break;
-            }
+
             count++;
             System.out.println("Even number " + number);
+
+            if (count == 5) {
+                // break ends the loop
+                break;
+            }
         }
     }
 
