@@ -4,7 +4,15 @@ public class NumberToWords {
             System.out.println("Invalid Value");
         }
 
+        if (number == 0) {
+            System.out.println("Zero");
+        }
+
+        int digits = getDigitCount(number);
         int reversed = reverse(number);
+        int reversedDigits = getDigitCount(reversed);
+        int difference = digits - reversedDigits;
+
         while (reversed != 0) {
             int mod = reversed % 10;
             if (mod == 0) {
@@ -30,6 +38,12 @@ public class NumberToWords {
             }
             reversed /= 10;
         }
+
+        if (difference > 0) {
+            for (int i = 0; i < difference; i++) {
+                System.out.println("Zero");
+            }
+        }
     }
 
     public static int reverse(int number) {
@@ -54,6 +68,20 @@ public class NumberToWords {
     }
 
     public static int getDigitCount(int number) {
-        
+        if (number < 0) {
+            return -1;
+        }
+
+        if (number == 0) {
+            return 1;
+        }
+
+        int count = 0;
+        while (number != 0) {
+            count++;
+            number /= 10;
+        }
+
+        return count;
     }
 }
