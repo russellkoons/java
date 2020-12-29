@@ -33,10 +33,27 @@ public class NumberToWords {
     }
 
     public static int reverse(int number) {
+        int original = number;
 
+        if (number < 0) {
+            number *= -1;
+        }
+
+        int reversed = 0;
+        while (number != 0) {
+            reversed *= 10;
+            reversed += (number % 10);
+            number /= 10;
+        }
+
+        if (original < 0) {
+            reversed *= -1;
+        }
+
+        return reversed;
     }
 
     public static int getDigitCount(int number) {
-
+        
     }
 }
