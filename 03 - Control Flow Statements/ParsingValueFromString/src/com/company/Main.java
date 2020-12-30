@@ -3,6 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+        // This string cannot be changed to an int if you add a letter to it
         String numberAsString = "2018";
         System.out.println("numberAsString = " + numberAsString);
 
@@ -14,5 +15,9 @@ public class Main {
         number += 1;
 
         System.out.println(numberAsString + " " + number);
+
+        String doubleAsString = "2018.125";
+        double parsed = Double.parseDouble(doubleAsString);
+        System.out.println(doubleAsString + " " + parsed);
     }
 }
