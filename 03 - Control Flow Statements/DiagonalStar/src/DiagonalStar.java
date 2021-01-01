@@ -5,16 +5,15 @@ public class DiagonalStar {
             return;
         }
 
-        for (int i = 0; i < number; i++) {
-            String line = "";
-            for (int j = 0; j < number; j++) {
-                if (i == 0 || i == number - 1 || j == 0 || j == number - 1 || i == j || number - i - 1 == j) {
-                    line += "*";
+        for (int row = 0; row < number; row++) {
+            for (int col = 0; col < number; col++) {
+                if (row == 0 || row == number - 1 || col == 0 || col == number - 1 || row == col || number - row - 1 == col) {
+                    System.out.print("*");
                 } else {
-                    line += " ";
+                    System.out.print(" ");
                 }
             }
-            System.out.println(line);
+            System.out.println();
         }
     }
 }
