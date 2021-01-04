@@ -12,6 +12,7 @@ public class Main {
 
         System.out.println("Enter your year of birth:");
         int year = scanner.nextInt();
+        scanner.nextLine(); // handle next line character (must be used for entering numbers into scanners)
 
         System.out.println("Your name is " + name + " you are " + (2020 - year) + " years old");
 
