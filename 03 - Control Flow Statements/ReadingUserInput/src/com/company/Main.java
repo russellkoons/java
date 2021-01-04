@@ -6,9 +6,14 @@ public class Main {
 
     public static void main(String[] args) {
 	    Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your name: ");
+
+        System.out.println("Enter your name:");
         String name = scanner.nextLine();
-        System.out.println("Your name is " + name);
+
+        System.out.println("Enter your year of birth:");
+        int year = scanner.nextInt();
+
+        System.out.println("Your name is " + name + " you are " + (2020 - year) + " years old");
 
         scanner.close();
     }
