@@ -23,7 +23,7 @@ public class Main {
                 System.out.println("Invalid year of birth");
             }
         } else {
-            System.out.println("Invalid year of birth");
+            System.out.println("Unable to parse year of birth");
         }
 
         scanner.close();
