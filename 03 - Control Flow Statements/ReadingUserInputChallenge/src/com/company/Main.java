@@ -10,7 +10,7 @@ public class Main {
         int counter = 0;
         int sum = 0;
 
-        while (counter < 10) {
+        while (true) {
             int order = counter + 1;
             System.out.println("Enter number #" + order + ":");
 
@@ -18,15 +18,19 @@ public class Main {
 
             if (isAnInt) {
                 int n = scanner.nextInt();
-                
+                counter++;
+                sum += n;
+                if (counter == 10) {
+                    break;
+                }
             } else {
                 System.out.println("Invalid number");
             }
 
             scanner.nextLine(); // Handle end of line (enter key)
-            counter++;
         }
 
+        System.out.println("Your sum is " + sum);
         scanner.close();
     }
 }
