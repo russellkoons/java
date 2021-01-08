@@ -7,4 +7,11 @@ public class PaintJob {
         return (int)(((width * height) - (extraBuckets * areaPerBucket)) / areaPerBucket);
     }
 
+    public static int getBucketCount(double width, double height, double areaPerBucket) {
+        if (width <= 0 || height <= 0 || areaPerBucket <= 0) {
+            return -1;
+        }
+
+        return (int)((width * height) / areaPerBucket);
+    }
 }
