@@ -32,4 +32,12 @@ public class Person {
             this.age = number;
         }
     }
+
+    public boolean isTeen() {
+        if (age > 12 && age < 20) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
