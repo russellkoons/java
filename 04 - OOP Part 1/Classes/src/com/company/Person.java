@@ -13,5 +13,9 @@ public class Person {
         return lastName;
     }
 
+    public int getAge() {
+        return age;
+    }
+
     
 }
