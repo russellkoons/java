@@ -24,4 +24,12 @@ public class Person {
     public void setLastName(String name) {
         this.lastName = name;
     }
+
+    public void setAge(int number) {
+        if (number < 0 || number > 100) {
+            this.age = 0;
+        } else {
+            this.age = number;
+        }
+    }
 }
