@@ -29,4 +29,12 @@ public class SimpleCalculator {
     public double getMultiplicationResult() {
         return firstNumber * secondNumber;
     }
+
+    public double getDivisionResult() {
+        if (secondNumber == 0) {
+            return 0;
+        } else {
+            return firstNumber / secondNumber;
+        }
+    }
 }
