@@ -9,4 +9,12 @@ public class SimpleCalculator {
     public double getSecondNumber() {
         return secondNumber;
     }
+
+    public void setFirstNumber(double number) {
+        this.firstNumber = number;
+    }
+
+    public void setSecondNumber(double number) {
+        this.secondNumber = number;
+    }
 }
