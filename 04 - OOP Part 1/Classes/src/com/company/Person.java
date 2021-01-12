@@ -17,5 +17,7 @@ public class Person {
         return age;
     }
 
-    
+    public void setFirstName(String name) {
+        this.firstName = name;
+    }
 }
