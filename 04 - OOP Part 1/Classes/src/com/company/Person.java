@@ -20,4 +20,8 @@ public class Person {
     public void setFirstName(String name) {
         this.firstName = name;
     }
+
+    public void setLastName(String name) {
+        this.lastName = name;
+    }
 }
