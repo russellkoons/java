@@ -5,6 +5,18 @@ public class BankAccount {
     private String email;
     private String phone;
 
+    public void deposit(double amount) {
+        this.balance += amount;
+    }
+
+    public void withdraw(double amount) {
+        if (this.balance - amount < 0) {
+            System.out.println("Only " + balance + " available. Withdrawal failed.");
+        } else {
+            this.balance -= amount;
+        }
+    }
+
     public String getNumber() {
         return number;
     }
