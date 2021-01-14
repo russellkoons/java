@@ -1,3 +1,5 @@
+package com.company;
+
 public class BankAccount {
     private String number;
     private double balance;
@@ -59,3 +61,4 @@ public class BankAccount {
         this.phone = phone;
     }
 }
+
