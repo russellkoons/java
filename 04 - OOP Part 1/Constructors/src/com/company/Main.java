@@ -3,7 +3,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-	    BankAccount myAccount = new BankAccount("42069", 0.00, "Russell", "rkoons@gmail.com", "(123) 456-7890");
+	    BankAccount myAccount = new BankAccount(); // "42069", 0.00, "Russell", "rkoons@gmail.com", "(123) 456-7890");
 
 		System.out.println(myAccount.getNumber());
 		System.out.println(myAccount.getName());
