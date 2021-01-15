@@ -20,5 +20,8 @@ public class Main {
         myAccount.deposit(51.0);
         myAccount.withdraw(100.0);
 
+        BankAccount russellAccount = new BankAccount("Russell", "rkoons@gmail.com", "12345");
+
+        System.out.println(russellAccount.getNumber() + " name " + russellAccount.getName());
     }
 }
