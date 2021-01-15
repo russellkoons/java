@@ -22,9 +22,7 @@ public class BankAccount {
     }
 
     public BankAccount(String name, String email, String phone) {
-        this.name = name;
-        this.email = email;
-        this.phone = phone;
+        this("99999", 100.55, name, email, phone);
     }
 
     public void deposit(double amount) {
