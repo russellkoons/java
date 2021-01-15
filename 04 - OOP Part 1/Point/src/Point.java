@@ -35,7 +35,7 @@ public class Point {
         return Math.sqrt(((x - this.x) * (x - this.x)) + ((y - this.y) * (y - this.y)));
     }
 
-    public double distance(Point second) {
-        return Math.sqrt(((second.x - this.x) * (second.x - this.x)) + ((second.y - this.y) * (second.y - this.y)));
+    public double distance(Point point) {
+        return Math.sqrt(((point.x - this.x) * (point.x - this.x)) + ((point.y - this.y) * (point.y - this.y)));
     }
 }
