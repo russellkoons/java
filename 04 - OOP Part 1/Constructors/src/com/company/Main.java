@@ -23,5 +23,14 @@ public class Main {
         BankAccount russellAccount = new BankAccount("Russell", "rkoons@gmail.com", "12345");
 
         System.out.println(russellAccount.getNumber() + " name " + russellAccount.getName());
+
+        VipCustomer russell = new VipCustomer();
+        System.out.println(russell.getName());
+
+        VipCustomer natalie = new VipCustomer("Natalie", 1000.0);
+        System.out.println(natalie.getName());
+
+        VipCustomer alvaro = new VipCustomer("Alvaro", 1.0, "al@email.com");
+        System.out.println(alvaro.getName());
     }
 }
