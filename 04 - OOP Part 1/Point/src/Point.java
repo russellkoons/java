@@ -30,4 +30,8 @@ public class Point {
     public double distance() {
         return Math.sqrt((x * x) + (y * y));
     }
+
+    public double distance(int x, int y) {
+        return Math.sqrt(((x - this.x) * (x - this.x)) + ((y - this.y) * (y - this.y)));
+    }
 }
