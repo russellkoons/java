@@ -8,4 +8,8 @@ public class Carpet {
             this.cost = cost;
         }
     }
+
+    public double getCost() {
+        return cost;
+    }
 }
