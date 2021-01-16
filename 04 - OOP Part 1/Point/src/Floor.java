@@ -14,4 +14,8 @@ public class Floor {
             this.length = 0;
         }
     }
+
+    public double getArea() {
+        return width * length;
+    }
 }
