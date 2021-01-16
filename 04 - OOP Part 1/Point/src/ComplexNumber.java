@@ -17,6 +17,11 @@ public class ComplexNumber {
         this.imaginary += complexNumber.getImaginary();
     }
 
+    public void subtract(double real, double imaginary) {
+        this.real -= real;
+        this.imaginary -= imaginary;
+    }
+
     public double getReal() {
         return real;
     }
