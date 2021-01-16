@@ -22,7 +22,10 @@ public class ComplexNumber {
         this.imaginary -= imaginary;
     }
 
-    
+    public void subtract(ComplexNumber other) {
+        this.real -= other.getReal();
+        this.imaginary -= other.getImaginary();
+    }
 
     public double getReal() {
         return real;
