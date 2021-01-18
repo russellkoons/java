@@ -20,7 +20,7 @@ public class Animal {
     }
 
     public void move() {
-        
+
     }
 
     public String getName() {
