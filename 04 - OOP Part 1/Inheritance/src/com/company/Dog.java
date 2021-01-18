@@ -29,9 +29,11 @@ public class Dog extends Animal {
 
     public void walk() {
         System.out.println("Dog is walking");
+        move(5);
     }
 
     public void run() {
         System.out.println("Dog is running");
+        move(10);
     }
 }
