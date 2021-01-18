@@ -10,5 +10,21 @@ public class Fish extends Animal {
         this.gills = gills;
         this.eyes = eyes;
         this.fins = fins;
+
+        private void rest() {
+
+        }
+
+        private void moveMuscles() {
+
+        }
+
+        private void moveBackFin() {
+            
+        }
+
+        private void swim() {
+
+        }
     }
 }
