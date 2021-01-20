@@ -42,4 +42,8 @@ public class Vehicle {
     public int getDirection() {
         return direction;
     }
+
+    public void stop() {
+        this.velocity = 0;
+    }
 }
