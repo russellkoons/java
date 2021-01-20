@@ -1,3 +1,5 @@
+package com.company;
+
 public class Vehicle {
     private String name;
     private String size;
@@ -25,5 +27,19 @@ public class Vehicle {
         System.out.println("Vehicle.move(): Moving at " + this.velocity + " in direction " + this.direction);
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public String getSize() {
+        return size;
+    }
+
+    public int getVelocity() {
+        return velocity;
+    }
+
+    public int getDirection() {
+        return direction;
+    }
 }
