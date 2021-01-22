@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8be8caef-c359-401a-9c68-990183bbe15a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InheritanceChallenge/com/company/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InheritanceChallenge/com/company/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InheritanceChallenge/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/InheritanceChallenge/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
