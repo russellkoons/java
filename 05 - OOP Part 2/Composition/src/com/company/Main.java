@@ -9,5 +9,9 @@ public class Main {
 	    Motherboard motherboard = new Motherboard("BJ-200", "Asus", 4, 6, "v2.44");
 
 	    PC thePC = new PC(theCase, theMonitor, motherboard);
+
+	    thePC.getMonitor().drawPixelAt(1500, 1200, "red");
+	    thePC.getMotherboard().loadProgram("Linux Mint 11");
+	    thePC.getTheCase().pressPowerButton();
     }
 }
