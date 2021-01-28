@@ -13,6 +13,7 @@ public class PC {
 
     public void powerUp() {
         theCase.pressPowerButton();
+        motherboard.loadProgram("Linux Mint 11");
         drawLogo();
     }
 

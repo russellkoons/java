@@ -10,7 +10,6 @@ public class Main {
 
 	    PC thePC = new PC(theCase, theMonitor, motherboard);
 
-	    thePC.getMotherboard().loadProgram("Linux Mint 11");
 	    thePC.powerUp();
     }
 }
