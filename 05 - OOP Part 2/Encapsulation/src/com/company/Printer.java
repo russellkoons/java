@@ -38,4 +38,8 @@ public class Printer {
         this.pagesPrinted += pagesToPrint;
         return pagesToPrint;
     }
+
+    public int getPagesPrinted() {
+        return pagesPrinted;
+    }
 }
