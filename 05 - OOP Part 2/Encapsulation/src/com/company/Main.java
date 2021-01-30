@@ -7,5 +7,13 @@ public class Main {
         player.name = "Russell";
         player.health = 20;
         player.weapon = "Bat";
+
+        int damage = 10;
+        player.loseHealth(damage);
+        System.out.println("Remaining health = " + player.healthRemaining());
+
+        damage = 11;
+        player.loseHealth(damage);
+        System.out.println("Remaining health = " + player.healthRemaining());
     }
 }
