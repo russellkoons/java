@@ -22,6 +22,17 @@ class Jaws extends Movie {
     }
 }
 
+class IndependenceDay extends Movie {
+    public IndependenceDay() {
+        super("Independence Day");
+    }
+
+    @Override
+    public String plot() {
+        return "Alien invation";
+    }
+}
+
 public class Main {
 
     public static void main(String[] args) {
