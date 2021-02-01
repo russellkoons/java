@@ -44,6 +44,17 @@ class MazeRunner extends Movie {
     }
 }
 
+class StarWars extends Movie {
+    public StarWars(String name) {
+        super("Star Wars");
+    }
+
+    @Override
+    public String plot() {
+        return "Little green man";
+    }
+}
+
 public class Main {
 
     public static void main(String[] args) {
