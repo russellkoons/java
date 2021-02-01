@@ -12,6 +12,16 @@ class Movie {
     }
 }
 
+class Jaws extends Movie {
+    public Jaws() {
+        super("Jaws");
+    }
+
+    public String plot() {
+        return "Mean shark";
+    }
+}
+
 public class Main {
 
     public static void main(String[] args) {
