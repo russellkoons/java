@@ -17,6 +17,7 @@ class Jaws extends Movie {
         super("Jaws");
     }
 
+    @Override
     public String plot() {
         return "Mean shark";
     }
@@ -34,7 +35,7 @@ class IndependenceDay extends Movie {
 }
 
 class MazeRunner extends Movie {
-    public MazeRunner(String name) {
+    public MazeRunner() {
         super("Maze Runner");
     }
 
@@ -45,13 +46,19 @@ class MazeRunner extends Movie {
 }
 
 class StarWars extends Movie {
-    public StarWars(String name) {
+    public StarWars() {
         super("Star Wars");
     }
 
     @Override
     public String plot() {
         return "Little green man";
+    }
+}
+
+class ForgettableMovie extends Movie {
+    public ForgettableMovie() {
+        super("Forgettable");
     }
 }
 
