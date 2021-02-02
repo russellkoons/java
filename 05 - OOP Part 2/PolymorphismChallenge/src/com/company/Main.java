@@ -6,7 +6,7 @@ class Car {
     private String name;
     private int wheels;
 
-    public Car(boolean engine, int cylinders, String name) {
+    public Car(int cylinders, String name) {
         this.engine = true;
         this.cylinders = cylinders;
         this.name = name;
@@ -31,6 +31,27 @@ class Car {
 
     public String getName() {
         return name;
+    }
+}
+
+class Mitsubishi extends Car {
+    public Mitsubishi(int cylinders, String name) {
+        super(cylinders, name);
+    }
+
+    @Override
+    public String startEngine() {
+        return "Mitsubishi -> startEngine()";
+    }
+
+    @Override
+    public String accelerate() {
+        return "Mitsubishi -> accelerate()";
+    }
+
+    @Override
+    public String brake() {
+        return "Mitsubishi -> brake()";
     }
 }
 
