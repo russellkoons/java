@@ -55,6 +55,49 @@ class Mitsubishi extends Car {
     }
 }
 
+
+class Holden extends Car {
+    public Holden(int cylinders, String name) {
+        super(cylinders, name);
+    }
+
+    @Override
+    public String startEngine() {
+        return "Holden -> startEngine()";
+    }
+
+    @Override
+    public String accelerate() {
+        return "Holden -> accelerate()";
+    }
+
+    @Override
+    public String brake() {
+        return "Holden -> brake()";
+    }
+}
+
+class Ford extends Car {
+    public Ford(int cylinders, String name) {
+        super(cylinders, name);
+    }
+
+    @Override
+    public String startEngine() {
+        return "Ford -> startEngine()";
+    }
+
+    @Override
+    public String accelerate() {
+        return "Ford -> accelerate()";
+    }
+
+    @Override
+    public String brake() {
+        return "Ford -> brake()";
+    }
+}
+
 public class Main {
 
     public static void main(String[] args) {
