@@ -20,7 +20,7 @@ public class Hamburger {
         this.meat = meat;
         this.price = price;
         this.breadRollType = breadRollType;
-        
+
         if (this.name == "Basic") {
             System.out.println("Basic hamburger on a " + breadRollType + " roll with " + meat + ", price is " + price);
         } else if (this.name == "Deluxe") {
