@@ -1,4 +1,4 @@
 package com.company;
 
-public class DeluxeBurger {
+public class DeluxeBurger extends Hamburger {
 }

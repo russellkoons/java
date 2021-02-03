@@ -1,4 +1,4 @@
 package com.company;
 
-public class HealthyBurger {
+public class HealthyBurger extends Hamburger {
 }
