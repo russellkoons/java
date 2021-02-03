@@ -20,12 +20,15 @@ public class Hamburger {
         this.meat = meat;
         this.price = price;
         this.breadRollType = breadRollType;
+        
         if (this.name == "Basic") {
             System.out.println("Basic hamburger on a " + breadRollType + " roll with " + meat + ", price is " + price);
         } else if (this.name == "Deluxe") {
             System.out.println("Deluxe hamburger on a Brioche roll with Angus. price is 14.54");
             System.out.println("Added Chips for an extra 2.75");
             System.out.println("Added Drink for an extra 1.81");
+        } else if (this.name == "Healthy") {
+            System.out.println("Healthy burger on a Brown rye roll with " + meat + ", price is " + price);
         }
     }
 
