@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61985b50-5d09-4358-9492-c23688c08b8c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/company/DeluxeBurger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/DeluxeBurger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Hamburger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Hamburger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
