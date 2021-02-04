@@ -12,6 +12,10 @@ public class Main {
             myArray[i] = i * 10;
         }
 
+        for (int i = 0; i < 10; i++) {
+            System.out.println(myArray[i]);
+        }
+
         double[] doubleArray = new double[10];
 
         System.out.println(myArray[5]);
