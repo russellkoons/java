@@ -21,10 +21,14 @@ public class Main {
         double[] doubleArray = new double[10];
 
         int[] myInts = getInts(5);
+
+        for (int i = 0; i < myInts.length; i++) {
+            System.out.println("Element " + i + ", typed value was " + myInts[i]);
+        }
     }
 
     public static int[] getInts(int number) {
-        System.out.println("Enter " + number + "int values.\r");
+        System.out.println("Enter " + number + " int values.\r");
         int[] values = new int[number];
 
         for (int i = 0; i < values.length; i++) {
