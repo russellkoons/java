@@ -8,11 +8,11 @@ public class Main {
         // int[] myArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; // This initializes the array with all the elements in it
         int[] myArray = new int[10]; // How to initialize with a for loop
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < myArray.length; i++) {
             myArray[i] = i * 10;
         }
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < myArray.length; i++) {
             System.out.println(myArray[i]);
         }
 
