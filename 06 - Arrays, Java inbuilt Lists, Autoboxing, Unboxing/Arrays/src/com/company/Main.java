@@ -1,6 +1,10 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
+
+    private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
 	    // int[] myArray = new int[10]; // int[] says it's an array, int[10] says it has 10 slots
@@ -15,6 +19,19 @@ public class Main {
         printArray(myArray);
 
         double[] doubleArray = new double[10];
+
+        int[] myInts = getInts(5);
+    }
+
+    public static int[] getInts(int number) {
+        System.out.println("Enter " + number + "int values.\r");
+        int[] values = new int[number];
+
+        for (int i = 0; i < values.length; i++) {
+            values[i] = scanner.nextInt();
+        }
+
+        return values;
     }
 
     public static void printArray(int[] array) {
