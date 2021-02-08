@@ -24,4 +24,27 @@ public class Main {
             System.out.println("Element " + i + " contents " + array[i]);
         }
     }
+
+    public static int[] sortIntegers(int[] array) {
+        int[] sorted = new int[array.length];
+
+        for (int i = 0; i < array.length; i++) {
+            sorted[i] = array[i];
+        }
+
+        boolean flag = true;
+        int temp;
+
+        while (flag) {
+            flag = false;
+            for (int i = 0; i < sorted.length - 1; i++) {
+                if (sorted[i] < sorted[i + 1]) {
+                    temp = sorted[i];
+                    sorted[i] = sorted[i + 1];
+                    sorted[i + 1] = temp;
+                    flag = true;
+                }
+            }
+        }
+    }
 }
