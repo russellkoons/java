@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -28,11 +29,13 @@ public class Main {
     }
 
     public static int[] sortIntegers(int[] array) {
-        int[] sorted = new int[array.length];
+//        int[] sorted = new int[array.length];
+//
+//        for (int i = 0; i < array.length; i++) {
+//            sorted[i] = array[i];
+//        }
 
-        for (int i = 0; i < array.length; i++) {
-            sorted[i] = array[i];
-        }
+        int[] sorted = Arrays.copyOf(array, array.length);
 
         boolean flag = true;
         int temp;
