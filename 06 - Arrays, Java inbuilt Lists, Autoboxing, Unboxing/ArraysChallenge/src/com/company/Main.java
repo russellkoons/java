@@ -8,6 +8,8 @@ public class Main {
 
     public static void main(String[] args) {
 	    int[] myInts = getIntegers(5);
+	    int[] sorted = sortIntegers(myInts);
+	    printArray(sorted);
     }
 
     public static int[] getIntegers(int capacity) {
@@ -46,5 +48,7 @@ public class Main {
                 }
             }
         }
+
+        return sorted;
     }
 }
