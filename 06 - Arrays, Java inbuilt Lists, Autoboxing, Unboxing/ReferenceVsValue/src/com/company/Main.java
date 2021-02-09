@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,5 +17,9 @@ public class Main {
         System.out.println("anotherInt = " + anotherInt);
 
         int[] myIntArray = new int[5];
+        int[] anotherArray = myIntArray;
+
+        System.out.println("myIntArray = " + Arrays.toString(myIntArray));
+        System.out.println("anotherArray = " + Arrays.toString(anotherArray));
     }
 }
