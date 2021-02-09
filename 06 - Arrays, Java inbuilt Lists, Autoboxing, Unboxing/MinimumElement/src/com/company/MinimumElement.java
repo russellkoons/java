@@ -3,13 +3,13 @@ package com.company;
 import java.util.Scanner;
 
 public class MinimumElement {
-    public int readInteger() {
+    private static int readInteger() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number:");
         return scanner.nextInt();
     }
 
-    public int[] readElements(int number) {
+    private static int[] readElements(int number) {
         Scanner scanner = new Scanner(System.in);
         int[] array = new int[number];
         System.out.println("Enter " + number + " numbers:" );
@@ -19,5 +19,17 @@ public class MinimumElement {
         }
 
         return array;
+    }
+
+    private static int findMin(int[] array) {
+        int min = Integer.MAX_VALUE;
+
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+        }
+
+        return min;
     }
 }
