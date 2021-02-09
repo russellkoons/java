@@ -27,4 +27,8 @@ public class Main {
         System.out.println("after change myIntArray = " + Arrays.toString(myIntArray));
         System.out.println("after change anotherArray = " + Arrays.toString(anotherArray));
     }
+
+    private static void modifyArray(int[] array) {
+        
+    }
 }
