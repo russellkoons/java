@@ -16,6 +16,7 @@ public class MinimumElement {
 
         for (int i = 0; i < number; i++) {
             array[i] = scanner.nextInt();
+            scanner.nextLine();
         }
 
         return array;
