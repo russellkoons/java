@@ -26,9 +26,14 @@ public class Main {
 
         System.out.println("after change myIntArray = " + Arrays.toString(myIntArray));
         System.out.println("after change anotherArray = " + Arrays.toString(anotherArray));
+
+        modifyArray(myIntArray);
+
+        System.out.println("after modifyArray myIntArray = " + Arrays.toString(myIntArray));
+        System.out.println("after modifyArray anotherArray = " + Arrays.toString(anotherArray));
     }
 
     private static void modifyArray(int[] array) {
-        
+        array[0] = 2;
     }
 }
