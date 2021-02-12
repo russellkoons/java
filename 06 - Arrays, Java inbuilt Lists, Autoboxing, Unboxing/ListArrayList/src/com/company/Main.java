@@ -29,4 +29,14 @@ public class Main {
             System.out.println();
         }
     }
+
+    public static void resizeArray() {
+        int[] original = baseData;
+
+        baseData = new int[12];
+
+        for (int i = 0; i < original.length; i++) {
+            baseData[i] = original[i];
+        }
+    }
  }
