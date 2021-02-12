@@ -16,4 +16,10 @@ public class Main {
         getInput();
         printArray();
     }
+
+    private static void getInput() {
+        for (int i = 0; i < baseData.length; i++) {
+            baseData[i] = s.nextInt();
+        }
+    }
 }
