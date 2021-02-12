@@ -14,7 +14,7 @@ public class Main {
         resizeArray();
         System.out.println("Enter 12 integers");
         getInput();
-        printArray();
+        printArray(baseData);
     }
 
     private static void getInput() {
@@ -26,13 +26,12 @@ public class Main {
     public static void printArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
-            System.out.println();
         }
+        System.out.println();
     }
 
     public static void resizeArray() {
         int[] original = baseData;
-
         baseData = new int[12];
 
         for (int i = 0; i < original.length; i++) {
