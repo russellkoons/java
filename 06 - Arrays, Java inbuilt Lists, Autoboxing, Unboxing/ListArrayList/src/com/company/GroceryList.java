@@ -20,4 +20,11 @@ public class GroceryList {
         groceryList.set(position, newItem);
         System.out.println("Grocery item " + (position + 1) + " has been modified");
     }
+
+    public void removeGroceryItem(int position) {
+        String theItem = groceryList.get(position);
+        groceryList.remove(position);
+
+        System.out.println("Removed " + theItem + " from the list");
+    }
 }
