@@ -32,7 +32,7 @@ public class GroceryList {
 //        boolean exists = groceryList.contains(searchItem); Checks if searchItem exists in the groceryList
         int position = groceryList.indexOf(searchItem);
 
-        if (position <= 0) {
+        if (position >= 0) {
             return groceryList.get(position);
         }
 
