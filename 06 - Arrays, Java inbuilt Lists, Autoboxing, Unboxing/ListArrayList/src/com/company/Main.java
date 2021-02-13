@@ -68,7 +68,12 @@ public class Main {
     }
 
     public static void modifyItem() {
-        
+        System.out.print("Enter item number");
+        int itemNumber = s.nextInt();
+        s.nextLine();
+        System.out.print("Enter replacement item");
+        String newItem = s.nextLine();
+        groceryList.modifyGroceryItem(itemNumber, newItem);
     }
 
     public static void removeItem() {
