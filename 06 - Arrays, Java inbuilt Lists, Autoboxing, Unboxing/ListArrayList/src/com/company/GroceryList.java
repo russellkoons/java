@@ -27,4 +27,15 @@ public class GroceryList {
 
         System.out.println("Removed " + theItem + " from the list");
     }
+
+    public String findItem(String searchItem) {
+//        boolean exists = groceryList.contains(searchItem); Checks if searchItem exists in the groceryList
+        int position = groceryList.indexOf(searchItem);
+
+        if (position <= 0) {
+            return groceryList.get(position);
+        }
+
+        return null;
+    }
 }
