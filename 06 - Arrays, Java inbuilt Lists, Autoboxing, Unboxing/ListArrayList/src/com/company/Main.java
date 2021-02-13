@@ -62,6 +62,11 @@ public class Main {
         System.out.println("\t 6 - To quit the application");
     }
 
+    public static void addItem() {
+        System.out.print("Please enter the grocery item");
+        groceryList.addGroceryItem(s.nextLine());
+    }
+
 //    private static void getInput() {
 //        for (int i = 0; i < baseData.length; i++) {
 //            baseData[i] = s.nextInt();
