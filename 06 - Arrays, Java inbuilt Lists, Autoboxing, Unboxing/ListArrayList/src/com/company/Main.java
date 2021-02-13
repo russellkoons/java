@@ -73,11 +73,14 @@ public class Main {
         s.nextLine();
         System.out.print("Enter replacement item");
         String newItem = s.nextLine();
-        groceryList.modifyGroceryItem(itemNumber, newItem);
+        groceryList.modifyGroceryItem(itemNumber - 1, newItem);
     }
 
     public static void removeItem() {
-
+        System.out.print("Enter item number");
+        int itemNumber = s.nextInt();
+        s.nextLine();
+        groceryList.removeGroceryItem(itemNumber);
     }
 
     public static void searchForItem() {
