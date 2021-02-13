@@ -25,7 +25,7 @@ public class Main {
                     groceryList.printGroceryList();
                     break;
                 case 2:
-                    additem();
+                    addItem();
                     break;
                 case 3:
                     modifyItem();
@@ -65,6 +65,18 @@ public class Main {
     public static void addItem() {
         System.out.print("Please enter the grocery item");
         groceryList.addGroceryItem(s.nextLine());
+    }
+
+    public static void modifyItem() {
+        
+    }
+
+    public static void removeItem() {
+
+    }
+
+    public static void searchForItem() {
+
     }
 
 //    private static void getInput() {
