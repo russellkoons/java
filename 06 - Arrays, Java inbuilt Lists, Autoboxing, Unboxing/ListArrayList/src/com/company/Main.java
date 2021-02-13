@@ -84,7 +84,13 @@ public class Main {
     }
 
     public static void searchForItem() {
-
+        System.out.print("Item to search for: ");
+        String search = s.nextLine();
+        if (groceryList.findItem(search) != null) {
+            System.out.println("Found " + search + " in our grocery list");
+        } else {
+            System.out.println(search + " is not in the grocery list");
+        }
     }
 
 //    private static void getInput() {
