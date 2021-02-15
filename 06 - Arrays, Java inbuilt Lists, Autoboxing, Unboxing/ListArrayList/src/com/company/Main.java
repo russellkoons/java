@@ -69,16 +69,16 @@ public class Main {
 
     public static void modifyItem() {
         System.out.print("Enter item number");
-        int itemNumber = s.nextInt();
+        String itemNumber = s.nextLine();
         s.nextLine();
         System.out.print("Enter replacement item");
         String newItem = s.nextLine();
-        groceryList.modifyGroceryItem(itemNumber - 1, newItem);
+        groceryList.modifyGroceryItem(itemNumber, newItem);
     }
 
     public static void removeItem() {
         System.out.print("Enter item number");
-        int itemNumber = s.nextInt();
+        String itemNumber = s.nextLine();
         s.nextLine();
         groceryList.removeGroceryItem(itemNumber);
     }

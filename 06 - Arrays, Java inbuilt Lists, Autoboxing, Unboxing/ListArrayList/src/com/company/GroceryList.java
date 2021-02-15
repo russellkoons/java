@@ -16,8 +16,8 @@ public class GroceryList {
         }
     }
 
-    public void modifyGroceryItem(String newItem) {
-        int position = findItem(newItem);
+    public void modifyGroceryItem(String currentItem, String newItem) {
+        int position = findItem(currentItem);
         if (position >= 0) {
             modifyGroceryItem(position, newItem);
         }
@@ -31,7 +31,7 @@ public class GroceryList {
     public void removeGroceryItem(String item) {
         int position = findItem(item);
         if (position >= 0) {
-            removeGroceryItem(position, item);
+            removeGroceryItem(position);
         }
     }
 
