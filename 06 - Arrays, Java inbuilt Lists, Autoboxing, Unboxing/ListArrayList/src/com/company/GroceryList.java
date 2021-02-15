@@ -42,7 +42,7 @@ public class GroceryList {
         System.out.println("Removed " + theItem + " from the list");
     }
 
-    public int findItem(String searchItem) {
+    private int findItem(String searchItem) {
         return groceryList.indexOf(searchItem);
 //        boolean exists = groceryList.contains(searchItem); Checks if searchItem exists in the groceryList
 //        int position = groceryList.indexOf(searchItem);
@@ -52,5 +52,14 @@ public class GroceryList {
 //        }
 //
 //        return null;
+    }
+
+    public boolean onFile(String search) {
+        int position = findItem(search);
+        if (position >= 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
