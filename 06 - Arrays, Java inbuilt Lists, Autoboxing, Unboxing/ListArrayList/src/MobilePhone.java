@@ -28,7 +28,13 @@ public class MobilePhone {
     }
 
     public boolean removeContact(Contact toRemove) {
-
+        int position = findContact(toRemove);
+        if (position >= 0) {
+            myContacts.remove(position);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     private int findContact(Contact toFind) {
