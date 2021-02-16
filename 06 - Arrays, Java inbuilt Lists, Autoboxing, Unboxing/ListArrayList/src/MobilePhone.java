@@ -9,5 +9,12 @@ public class MobilePhone {
         this.myContacts = new ArrayList<Contact>();
     }
 
-    
+    public boolean addNewContact(Contact newContact) {
+        int position = myContacts.indexOf(newContact);
+        if (position >= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
