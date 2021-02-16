@@ -10,8 +10,17 @@ public class MobilePhone {
     }
 
     public boolean addNewContact(Contact newContact) {
-        int position = myContacts.indexOf(newContact);
+        if (myContacts.indexOf(newContact) >= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean updateContact(Contact oldContact, Contact newContact) {
+        int position = myContacts.indexOf(oldContact);
         if (position >= 0) {
+            myContacts.set(position, newContact);
             return true;
         } else {
             return false;
