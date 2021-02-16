@@ -13,7 +13,7 @@ public class MobilePhone {
         if (findContact(newContact) >= 0) {
             return false;
         } else {
-            this.myContacts.add(newContact);
+            myContacts.add(newContact);
             return true;
         }
     }
@@ -21,7 +21,7 @@ public class MobilePhone {
     public boolean updateContact(Contact oldContact, Contact newContact) {
         int position = findContact(oldContact);
         if (position >= 0) {
-            this.myContacts.set(position, newContact);
+            myContacts.set(position, newContact);
             return true;
         } else {
             return false;
