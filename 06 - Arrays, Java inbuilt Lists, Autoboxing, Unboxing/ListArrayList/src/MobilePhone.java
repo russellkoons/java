@@ -37,6 +37,16 @@ public class MobilePhone {
         }
     }
 
+    private int findContact(String toFind) {
+        int position = -1;
+        for (int i = 0; i < myContacts.size(); i++) {
+            if (myContacts.get(i).getName() == toFind) {
+                position = i;
+            }
+        }
+        return position;
+    }
+
     private int findContact(Contact toFind) {
         return myContacts.indexOf(toFind);
     }
