@@ -37,10 +37,19 @@ public class MobilePhone {
         }
     }
 
+    public Contact queryContact(String name) {
+        int position = findContact(name);
+        if (position >= 0) {
+            return myContacts.get(position);
+        } else {
+            return null;
+        }
+    }
+
     private int findContact(String toFind) {
         int position = -1;
         for (int i = 0; i < myContacts.size(); i++) {
-            if (myContacts.get(i).getName() == toFind) {
+            if (myContacts.get(i).getName().equals(toFind)) {
                 position = i;
             }
         }
