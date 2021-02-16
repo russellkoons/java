@@ -102,6 +102,9 @@ public class Main {
         newArray.addAll(groceryList.getGroceryList());
 
         ArrayList<String> nextArray = new ArrayList<String>(groceryList.getGroceryList());
+
+        String[] myArray = new String[groceryList.getGroceryList().size()];
+        myArray = groceryList.getGroceryList().toArray(myArray);
     }
 
 //    private static void getInput() {
