@@ -13,6 +13,7 @@ public class MobilePhone {
         if (findContact(newContact) >= 0) {
             return false;
         } else {
+            this.myContacts.add(newContact);
             return true;
         }
     }
@@ -20,7 +21,7 @@ public class MobilePhone {
     public boolean updateContact(Contact oldContact, Contact newContact) {
         int position = findContact(oldContact);
         if (position >= 0) {
-            myContacts.set(position, newContact);
+            this.myContacts.set(position, newContact);
             return true;
         } else {
             return false;
@@ -49,21 +50,20 @@ public class MobilePhone {
     public void printContacts() {
         System.out.println("Contact List:");
         for (int i = 0; i < myContacts.size(); i++) {
-            System.out.println(i + ". " + myContacts.get(i).getName() + " -> " + myContacts.get(i).getPhoneNumber());
+            System.out.println((i + 1) + ". " + myContacts.get(i).getName() + " -> " + myContacts.get(i).getPhoneNumber());
         }
-    }
-
-    private int findContact(String toFind) {
-        int position = -1;
-        for (int i = 0; i < myContacts.size(); i++) {
-            if (myContacts.get(i).getName().equals(toFind)) {
-                position = i;
-            }
-        }
-        return position;
     }
 
     private int findContact(Contact toFind) {
-        return myContacts.indexOf(toFind);
+        return findContact(toFind.getName());
+    }
+
+    private int findContact(String toFind) {
+        for (int i = 0; i < myContacts.size(); i++) {
+            if (myContacts.get(i).getName().equals(toFind)) {
+                return i;
+            }
+        }
+        return -1;
     }
 }
