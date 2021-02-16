@@ -46,6 +46,13 @@ public class MobilePhone {
         }
     }
 
+    public void printContacts() {
+        System.out.println("Contact List:");
+        for (int i = 0; i < myContacts.size(); i++) {
+            System.out.println(i + ". " + myContacts.get(i).getName() + " -> " + myContacts.get(i).getPhoneNumber());
+        }
+    }
+
     private int findContact(String toFind) {
         int position = -1;
         for (int i = 0; i < myContacts.size(); i++) {
