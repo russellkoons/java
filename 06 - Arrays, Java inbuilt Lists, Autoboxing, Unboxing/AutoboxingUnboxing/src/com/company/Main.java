@@ -2,6 +2,22 @@ package com.company;
 
 import java.util.ArrayList;
 
+class IntClass {
+    private int value;
+
+    public IntClass(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+}
+
 public class Main {
 
     public static void main(String[] args) {
