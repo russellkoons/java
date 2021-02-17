@@ -31,5 +31,17 @@ public class Main {
 //        ArrayList<int> intArrayList = new ArrayList<int>(); ArrayLists cannot be primitive types
         ArrayList<IntClass> intClassArrayList = new ArrayList<IntClass>();
         intClassArrayList.add(new IntClass(69));
+
+        Integer integer = Integer.valueOf(69);
+        Double doubleValue = Double.valueOf(12.25);
+
+        ArrayList<Integer> integerArrayList = new ArrayList<Integer>();
+        for (int i = 0; i < 10; i++) {
+            integerArrayList.add(Integer.valueOf(i));
+        }
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i + " -> " + integerArrayList.get(i).intValue());
+        }
     }
 }
