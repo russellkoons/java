@@ -1,5 +1,6 @@
 package com.company;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 class IntClass {
@@ -28,5 +29,7 @@ public class Main {
         stringArrayList.add("Russell");
 
 //        ArrayList<int> intArrayList = new ArrayList<int>(); ArrayLists cannot be primitive types
+        ArrayList<IntClass> intClassArrayList = new ArrayList<IntClass>();
+        intClassArrayList.add(new IntClass(69));
     }
 }
