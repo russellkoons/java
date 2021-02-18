@@ -26,6 +26,15 @@ public class Branch {
         return false;
     }
 
+    public boolean addCustomerTransaction(String name, Double transaction) {
+        Customer found = findCustomer(name);
+        if (found != null) {
+            found.addTransaction(transaction);
+            return true;
+        }
+        return false;
+    }
+
     public Customer findCustomer(String name) {
         for (int i = 0; i < customers.size(); i++) {
             if (customers.get(i).getName().equals(name)) {
