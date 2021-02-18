@@ -4,9 +4,18 @@ public class Bank {
     private String name;
     private ArrayList<Branch> branches;
 
-    public Bank(String name, ArrayList<Branch> branches) {
+    public Bank(String name) {
         this.name = name;
-        this.branches = branches;
+        this.branches = new ArrayList<Branch>();
+    }
+
+    public boolean addBranch(String name) {
+        Branch found = findBranch(name);
+        if (found == null) {
+            branches.add(new Branch(name));
+            return true;
+        }
+        return false;
     }
 
     public Branch findBranch(String name) {

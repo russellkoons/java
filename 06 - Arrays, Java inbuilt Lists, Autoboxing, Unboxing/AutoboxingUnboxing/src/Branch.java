@@ -4,9 +4,9 @@ public class Branch {
     private String name;
     private ArrayList<Customer> customers;
 
-    public Branch(String name, ArrayList<Customer> customers) {
+    public Branch(String name) {
         this.name = name;
-        this.customers = customers;
+        this.customers = new ArrayList<Customer>();
     }
 
     public String getName() {

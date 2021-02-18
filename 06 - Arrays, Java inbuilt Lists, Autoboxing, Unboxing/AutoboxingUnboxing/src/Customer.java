@@ -6,7 +6,7 @@ public class Customer {
 
     public Customer(String name, Double transaction) {
         this.name = name;
-        assert this.transactions != null;
+        this.transactions = new ArrayList<Double>();
         this.transactions.add(transaction);
     }
 
