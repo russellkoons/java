@@ -18,7 +18,12 @@ public class Branch {
     }
 
     public boolean newCustomer(String name, double transaction) {
+        if (findCustomer(name) == null) {
+            customers.add(new Customer(name, transaction));
+            return true;
+        }
 
+        return false;
     }
 
     public Customer findCustomer(String name) {
