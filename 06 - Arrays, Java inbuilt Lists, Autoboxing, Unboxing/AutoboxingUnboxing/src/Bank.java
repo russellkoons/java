@@ -18,6 +18,14 @@ public class Bank {
         return false;
     }
 
+    public boolean addCustomerTransaction(String branch, String customer, double transaction) {
+        Branch foundBranch = findBranch(branch);
+        if (foundBranch != null) {
+            return foundBranch.addCustomerTransaction(customer, transaction);
+        }
+        return false;
+    }
+
     public Branch findBranch(String name) {
         for (int i = 0; i < branches.size(); i++) {
             if (branches.get(i).getName().equals(name)) {
