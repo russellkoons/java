@@ -19,14 +19,14 @@ public class Branch {
 
     public boolean newCustomer(String name, double transaction) {
         if (findCustomer(name) == null) {
-            customers.add(new Customer(name, transaction));
+            this.customers.add(new Customer(name, transaction));
             return true;
         }
 
         return false;
     }
 
-    public boolean addCustomerTransaction(String name, Double transaction) {
+    public boolean addCustomerTransaction(String name, double transaction) {
         Customer found = findCustomer(name);
         if (found != null) {
             found.addTransaction(transaction);
@@ -35,10 +35,10 @@ public class Branch {
         return false;
     }
 
-    public Customer findCustomer(String name) {
-        for (int i = 0; i < customers.size(); i++) {
-            if (customers.get(i).getName().equals(name)) {
-                return customers.get(i);
+    private Customer findCustomer(String name) {
+        for (Customer customer : customers) {
+            if (customer.getName().equals(name)) {
+                return customer;
             }
         }
         return null;

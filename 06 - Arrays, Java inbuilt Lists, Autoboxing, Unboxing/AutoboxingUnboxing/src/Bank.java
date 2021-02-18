@@ -12,7 +12,8 @@ public class Bank {
     public boolean addBranch(String name) {
         Branch found = findBranch(name);
         if (found == null) {
-            branches.add(new Branch(name));
+            Branch branch = new Branch(name);
+            this.branches.add(branch);
             return true;
         }
         return false;
@@ -34,10 +35,10 @@ public class Bank {
         return false;
     }
 
-    public Branch findBranch(String name) {
-        for (int i = 0; i < branches.size(); i++) {
-            if (branches.get(i).getName().equals(name)) {
-                return branches.get(i);
+    private Branch findBranch(String name) {
+        for (Branch branch : branches) {
+            if (branch.getName().equals(name)) {
+                return branch;
             }
         }
         return null;
@@ -48,6 +49,9 @@ public class Bank {
 
         if (found != null) {
             ArrayList<Customer> customers = found.getCustomers();
+            if (customers.size() == 0) {
+                return false;
+            }
             System.out.println("Customer details for branch " + found.getName());
             for (int i = 0; i < customers.size(); i++) {
                 System.out.println("Customer: " + customers.get(i).getName() + "[" + (i + 1) + "]");
@@ -55,10 +59,12 @@ public class Bank {
                     ArrayList<Double> transactions = customers.get(i).getTransactions();
                     System.out.println("Transactions");
                     for (int j = 0; j < transactions.size(); j++) {
-                        System.out.println("[" + (i + 1) + "] Amount " + transactions.get(i));
+                        String toString = String.format("%,.2f", transactions.get(j));
+                        System.out.println("[" + (j + 1) + "]  Amount " + toString);
                     }
                 }
             }
+            return true;
         }
 
         return false;

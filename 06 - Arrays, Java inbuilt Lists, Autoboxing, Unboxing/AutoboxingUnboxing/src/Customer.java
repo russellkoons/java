@@ -19,6 +19,6 @@ public class Customer {
     }
 
     public void addTransaction(Double transaction) {
-        transactions.add(transaction);
+        this.transactions.add(transaction);
     }
 }
