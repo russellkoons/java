@@ -16,4 +16,17 @@ public class Branch {
     public ArrayList<Customer> getCustomers() {
         return customers;
     }
+
+    public boolean newCustomer(String name, double transaction) {
+
+    }
+
+    public Customer findCustomer(String name) {
+        for (int i = 0; i < customers.size(); i++) {
+            if (customers.get(i).getName().equals(name)) {
+                return customers.get(i);
+            }
+        }
+        return null;
+    }
 }
