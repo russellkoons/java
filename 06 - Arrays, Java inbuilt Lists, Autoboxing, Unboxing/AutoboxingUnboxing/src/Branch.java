@@ -8,4 +8,12 @@ public class Branch {
         this.name = name;
         this.customers = customers;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<Customer> getCustomers() {
+        return customers;
+    }
 }
