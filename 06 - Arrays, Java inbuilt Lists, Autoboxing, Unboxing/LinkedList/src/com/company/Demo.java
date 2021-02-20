@@ -2,6 +2,7 @@ package com.company;
 
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class Demo {
     public static void main(String[] args) {
@@ -30,5 +31,13 @@ public class Demo {
             System.out.println("Now visiting " + i.next());
         }
         System.out.println("====================================");
+    }
+
+    private static boolean addInOrder(LinkedList<String> list, String newCity) {
+        ListIterator<String> stringListIterator = list.listIterator();
+
+        while (stringListIterator.hasNext()) {
+            
+        }
     }
 }
