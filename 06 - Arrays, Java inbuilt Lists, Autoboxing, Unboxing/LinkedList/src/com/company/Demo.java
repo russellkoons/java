@@ -12,6 +12,11 @@ public class Demo {
         placesToVisit.add("New York City");
         placesToVisit.add("Adelaide");
         placesToVisit.add("Tokyo");
+        placesToVisit.add("Pittsburgh");
+
+        printList(placesToVisit);
+
+        placesToVisit.add(1, "Charlotte");
 
         printList(placesToVisit);
     }
