@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Demo {
@@ -11,5 +12,15 @@ public class Demo {
         placesToVisit.add("New York City");
         placesToVisit.add("Adelaide");
         placesToVisit.add("Tokyo");
+
+        printList(placesToVisit);
+    }
+
+    private static void printList(LinkedList<String> list) {
+        Iterator<String> i = list.iterator();
+        while (i.hasNext()) {
+            System.out.println("Now visiting " + i.next());
+        }
+        System.out.println("====================================");
     }
 }
