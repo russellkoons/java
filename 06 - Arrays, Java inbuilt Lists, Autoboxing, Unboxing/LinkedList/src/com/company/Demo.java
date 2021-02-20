@@ -47,7 +47,13 @@ public class Demo {
                 // Brisbane -> Adelaide would return > 0
                 stringListIterator.previous();
                 stringListIterator.add(newCity);
+                return true;
+            } else if (comparison < 0) {
+                // move on to next city
             }
         }
+
+        stringListIterator.add(newCity);
+        return true;
     }
 }
