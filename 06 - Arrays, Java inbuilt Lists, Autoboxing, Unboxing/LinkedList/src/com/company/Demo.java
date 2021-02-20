@@ -37,7 +37,17 @@ public class Demo {
         ListIterator<String> stringListIterator = list.listIterator();
 
         while (stringListIterator.hasNext()) {
-            
+            int comparison = stringListIterator.next().compareTo(newCity);
+            if (comparison == 0) {
+                // equal, do not add
+                System.out.println(newCity + " is already in the list");
+                return false;
+            } else if (comparison > 0) {
+                // newCity should appear before this one
+                // Brisbane -> Adelaide would return > 0
+                stringListIterator.previous();
+                stringListIterator.add(newCity);
+            }
         }
     }
 }
