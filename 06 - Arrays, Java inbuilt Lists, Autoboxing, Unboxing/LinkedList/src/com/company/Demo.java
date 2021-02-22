@@ -95,6 +95,9 @@ public class Demo {
                     } else {
                         System.out.println("We are at the start of the list");
                     }
+                case 3:
+                    printMenu();
+                    break;
             }
         }
     }
