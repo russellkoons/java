@@ -27,6 +27,8 @@ public class Demo {
 
         placesToVisit.remove(4);
         printList(placesToVisit);
+
+        visit(placesToVisit);
     }
 
     private static void printList(LinkedList<String> list) {
@@ -95,6 +97,7 @@ public class Demo {
                     } else {
                         System.out.println("We are at the start of the list");
                     }
+                    break;
                 case 3:
                     printMenu();
                     break;
