@@ -68,6 +68,34 @@ public class Demo {
 
         if (cities.isEmpty()) {
             System.out.println("No cities in the itinerary");
+            return;
+        } else {
+            System.out.println("Now visiting " + listIterator.next());
+            printMenu();
+        }
+
+        while (!quit) {
+            int action = scanner.nextInt();
+            scanner.nextLine();
+            switch(action) {
+                case 0:
+                    System.out.println("Holiday over");
+                    quit = true;
+                    break;
+                case 1:
+                    if (listIterator.hasNext()) {
+                        System.out.println("Now visiting " + listIterator.next());
+                    } else {
+                        System.out.println("Reached the end of the list");
+                    }
+                    break;
+                case 2:
+                    if (listIterator.hasPrevious()) {
+                        System.out.println("Now visiting " + listIterator.previous());
+                    } else {
+                        System.out.println("We are at the start of the list");
+                    }
+            }
         }
     }
 }
