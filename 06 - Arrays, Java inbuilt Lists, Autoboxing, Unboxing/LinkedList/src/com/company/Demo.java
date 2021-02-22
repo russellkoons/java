@@ -3,6 +3,7 @@ package com.company;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
+import java.util.Scanner;
 
 public class Demo {
     public static void main(String[] args) {
@@ -58,5 +59,15 @@ public class Demo {
 
         stringListIterator.add(newCity);
         return true;
+    }
+
+    private static void visit(LinkedList cities) {
+        Scanner scanner = new Scanner(System.in);
+        boolean quit = false;
+        ListIterator<String> listIterator = cities.listIterator();
+
+        if (cities.isEmpty()) {
+            System.out.println("No cities in the itinerary");
+        }
     }
 }
