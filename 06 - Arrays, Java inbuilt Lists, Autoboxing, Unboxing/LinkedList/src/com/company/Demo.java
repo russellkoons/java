@@ -17,6 +17,9 @@ public class Demo {
 
         printList(placesToVisit);
 
+        addInOrder(placesToVisit, "Alice Springs");
+        addInOrder(placesToVisit, "Darwin");
+
         placesToVisit.add(1, "Charlotte");
 
         printList(placesToVisit);
