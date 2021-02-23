@@ -60,11 +60,14 @@ public class Album {
     }
 
     private Song findSong(String title) {
-        for (Song song : songs) {
-            if (song.getTitle().equals(title)) {
-                return song;
+        if (!songs.isEmpty()) {
+            for (Song song : songs) {
+                if (song.getTitle().equals(title)) {
+                    return song;
+                }
             }
         }
+
         return null;
     }
 }
