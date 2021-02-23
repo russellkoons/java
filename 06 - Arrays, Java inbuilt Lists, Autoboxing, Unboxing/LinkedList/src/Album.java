@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.ListIterator;
 
 public class Album {
     private String name;
@@ -10,7 +9,7 @@ public class Album {
     public Album(String name, String artist) {
         this.name = name;
         this.artist = artist;
-        this.songs = new ArrayList<Song>();
+        songs = new ArrayList<Song>();
     }
 
     public boolean addSong(String title, double duration) {
@@ -24,41 +23,6 @@ public class Album {
         return false;
     }
 
-    public boolean addToPlaylist(int track, LinkedList<Song> playlist) {
-        Song song = songs.get(track - 1);
-        String songTitle = song.getTitle();
-
-        ListIterator<Song> playlistIterator = playlist.listIterator();
-
-        while (playlistIterator.hasNext()) {
-            if (playlistIterator.next().getTitle().compareTo(songTitle) == 0) {
-                return false;
-            }
-        }
-
-        playlist.add(song);
-        return true;
-    }
-
-    public boolean addToPlaylist(String title, LinkedList<Song> playlist) {
-        Song song = findSong(title);
-
-        if (song == null) {
-            return false;
-        }
-
-        ListIterator<Song> playlistIterator = playlist.listIterator();
-
-        while (playlistIterator.hasNext()) {
-            if (playlistIterator.next().getTitle().compareTo(title) == 0) {
-                return false;
-            }
-        }
-
-        playlist.add(song);
-        return true;
-    }
-
     private Song findSong(String title) {
         if (!songs.isEmpty()) {
             for (Song song : songs) {
@@ -69,5 +33,19 @@ public class Album {
         }
 
         return null;
+    }
+
+    public boolean addToPlayList(int trackNumber, LinkedList<Song> playlist){
+        if(trackNumber <= 0) return false;
+        Song song = songs.get(trackNumber-1);
+        playlist.add(song);
+        return true;
+    }
+
+    public boolean addToPlayList(String title, LinkedList<Song> playlist){
+        Song song = findSong(title);
+        if(song == null) return false;
+        playlist.add(song);
+        return true;
     }
 }
