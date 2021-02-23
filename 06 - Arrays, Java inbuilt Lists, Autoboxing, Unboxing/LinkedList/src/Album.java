@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.ListIterator;
 
 public class Album {
     private String name;
@@ -20,6 +22,22 @@ public class Album {
         }
 
         return false;
+    }
+
+    public boolean addToPlaylist(int track, LinkedList<Song> playlist) {
+        Song song = songs.get(track - 1);
+        String songTitle = song.getTitle();
+
+        ListIterator<Song> playlistIterator = playlist.listIterator();
+
+        while (playlistIterator.hasNext()) {
+            if (playlistIterator.next().getTitle().compareTo(songTitle) == 0) {
+                return false;
+            }
+        }
+
+        playlist.add(song);
+        return true;
     }
 
     private Song findSong(String title) {
