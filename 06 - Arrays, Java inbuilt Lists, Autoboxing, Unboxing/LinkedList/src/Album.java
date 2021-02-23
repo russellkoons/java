@@ -40,6 +40,25 @@ public class Album {
         return true;
     }
 
+    public boolean addToPlaylist(String title, LinkedList<Song> playlist) {
+        Song song = findSong(title);
+
+        if (song == null) {
+            return false;
+        }
+
+        ListIterator<Song> playlistIterator = playlist.listIterator();
+
+        while (playlistIterator.hasNext()) {
+            if (playlistIterator.next().getTitle().compareTo(title) == 0) {
+                return false;
+            }
+        }
+
+        playlist.add(song);
+        return true;
+    }
+
     private Song findSong(String title) {
         for (Song song : songs) {
             if (song.getTitle().equals(title)) {
