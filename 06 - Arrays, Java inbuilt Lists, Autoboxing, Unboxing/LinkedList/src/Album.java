@@ -12,10 +12,17 @@ public class Album {
     }
 
     public boolean addSong(String title, double duration) {
+        Song found = findSong(title);
 
+        if (found == null) {
+            songs.add(new Song(title, duration));
+            return true;
+        }
+
+        return false;
     }
 
-    public Song findSong(String title) {
+    private Song findSong(String title) {
         for (Song song : songs) {
             if (song.getTitle().equals(title)) {
                 return song;
