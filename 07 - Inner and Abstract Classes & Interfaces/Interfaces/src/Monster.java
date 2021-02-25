@@ -23,7 +23,11 @@ public class Monster implements ISaveable {
 
     @Override
     public void read(List<String> list) {
-
+        if (list != null && list.size() > 0) {
+            this.name = list.get(0);
+            this.hitPoints = Integer.parseInt(list.get(1));
+            this.strength = Integer.parseInt(list.get(2));
+        }
     }
 
     @Override
