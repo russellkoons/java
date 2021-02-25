@@ -23,7 +23,7 @@ public class Monster implements ISaveable {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Monster{name=" + this.name + ", hitPoints=" + this.hitPoints + ", strength=" + this.strength + "}";
     }
 
     public String getName() {
