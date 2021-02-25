@@ -35,7 +35,7 @@ public class Player implements ISaveable {
 
     @Override
     public String toString() {
-        return "Player{name=" + this.name + ", hitPoints=" + this.hitPoints + ", strength=" + this.strength + ", weapon=" + this.weapon + "}";
+        return "Player{name='" + this.name + "', hitPoints=" + this.hitPoints + ", strength=" + this.strength + ", weapon='" + this.weapon + "'}";
     }
 
     public String getName() {
