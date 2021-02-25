@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Monster implements ISaveable {
     private String name;
     private int hitPoints;
@@ -9,7 +11,20 @@ public class Monster implements ISaveable {
         this.strength = strength;
     }
 
-    
+    @Override
+    public List<String> write() {
+        return null;
+    }
+
+    @Override
+    public void read(List<String> list) {
+
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 
     public String getName() {
         return name;
