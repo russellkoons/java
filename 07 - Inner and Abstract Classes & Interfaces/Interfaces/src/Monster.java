@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Monster implements ISaveable {
@@ -13,7 +14,11 @@ public class Monster implements ISaveable {
 
     @Override
     public List<String> write() {
-        return null;
+        List<String> list = new ArrayList<>();
+        list.add(this.name);
+        list.add("" + this.hitPoints);
+        list.add("" + this.strength);
+        return list;
     }
 
     @Override
