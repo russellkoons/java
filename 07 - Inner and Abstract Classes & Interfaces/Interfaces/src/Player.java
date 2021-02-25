@@ -11,7 +11,10 @@ public class Player implements ISaveable {
         this.strength = strength;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Player{name=" + this.name + ", hitPoints=" + this.hitPoints + ", strength=" + this.strength + ", weapon=" + this.weapon + "}";
+    }
 
     public String getName() {
         return name;
