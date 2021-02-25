@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Player implements ISaveable {
     private String name;
     private String weapon;
@@ -9,6 +11,21 @@ public class Player implements ISaveable {
         this.weapon = "Sword";
         this.hitPoints = hitPoints;
         this.strength = strength;
+    }
+
+    @Override
+    public List<String> write() {
+        List<String> stringList = new ArrayList<>();
+        stringList.add(this.name);
+        stringList.add("" + this.hitPoints);
+        stringList.add("" + this.strength);
+        stringList.add(this.weapon);
+        return stringList;
+    }
+
+    @Override
+    public void read(List<String> list) {
+        
     }
 
     @Override
