@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Gearbox {
     private ArrayList<Gear> gears;
     private int maxGears;
-    private int gearNumber = 0;
+    private int currentGear = 0;
 
     public Gearbox(int maxGears) {
         this.maxGears = maxGears;
@@ -24,7 +24,7 @@ public class Gearbox {
         }
 
         public double driveSpeed(int revs) {
-            return revs * ratio;
+            return revs * this.ratio;
         }
     }
 }
