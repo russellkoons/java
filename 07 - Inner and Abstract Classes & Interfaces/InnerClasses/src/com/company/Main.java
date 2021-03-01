@@ -18,6 +18,9 @@ public class Main {
             }
         }
 
+        btnPrint.setOnClickListener(new ClickListener());
+        listen();
+
         Gearbox mcLaren = new Gearbox(6);
 //        mcLaren.addGear(1, 5.3);
 //        mcLaren.addGear(2, 10.6);
@@ -44,5 +47,20 @@ public class Main {
 //        System.out.println(third.driveSpeed(1000));
 
 
+    }
+    private static void listen() {
+        boolean quit = false;
+
+        while (!quit) {
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+            switch(choice) {
+                case 0:
+                    quit = true;
+                    break;
+                case 1:
+                    btnPrint.onClick();
+            }
+        }
     }
 }
