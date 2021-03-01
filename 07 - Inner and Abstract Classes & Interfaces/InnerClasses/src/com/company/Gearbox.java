@@ -30,7 +30,7 @@ public class Gearbox {
             System.out.println("Scream!");
             return 0.0;
         } else {
-            return revs * gears.get(currentGear.getRatio);
+            return revs * gears.get(currentGear.getRatio());
         }
     }
 
