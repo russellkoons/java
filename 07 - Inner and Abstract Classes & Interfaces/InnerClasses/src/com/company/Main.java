@@ -7,18 +7,24 @@ public class Main {
     private static Button btnPrint = new Button("Print");
 
     public static void main(String[] args) {
-        class ClickListener implements Button.OnClickListener {
-            public ClickListener() {
-                System.out.println("I've been attached");
-            }
+//        class ClickListener implements Button.OnClickListener {
+//            public ClickListener() {
+//                System.out.println("I've been attached");
+//            }
+//
+//            @Override
+//            public void onClick(String title) {
+//                System.out.println(title + " was clicked!");
+//            }
+//        }
 
+//        btnPrint.setOnClickListener(new ClickListener());
+        btnPrint.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(String title) {
-                System.out.println(title + " was clicked!");
+                System.out.println(title + " was clicked");
             }
-        }
-
-        btnPrint.setOnClickListener(new ClickListener());
+        });
         listen();
 
         Gearbox mcLaren = new Gearbox(6);
