@@ -39,14 +39,11 @@ public class Album {
 
 
         public boolean add(Song song) {
-            Song found = findSong(song.getTitle());
-
-            if (found == null) {
-                songs.add(song);
-                return true;
+            if (songs.contains(song)) {
+                return false;
             }
-
-            return false;
+            songs.add(song);
+            return true;
         }
 
         private Song findSong(String title) {
@@ -57,7 +54,14 @@ public class Album {
                     }
                 }
             }
+            return null;
+        }
 
+        private Song findSong(int trackNumber) {
+            int index = trackNumber - 1;
+            if (index > 0 && index < songs.size()) {
+                return songs.get(index);
+            }
             return null;
         }
     }
