@@ -17,28 +17,32 @@ public class Album {
     }
 
     public boolean addToPlayList(int trackNumber, LinkedList<Song> playlist){
-        if(trackNumber <= 0) return false;
-        Song song = songs.get(trackNumber-1);
-        playlist.add(song);
-        return true;
+        Song checkedSong = this.songs.findSong(trackNumber);
+        if(checkedSong != null) {
+            playlist.add(checkedSong);
+            return true;
+        }
+        return false;
     }
 
     public boolean addToPlayList(String title, LinkedList<Song> playlist){
-        Song song = this.songs.findSong(title);
-        if(song == null) return false;
-        playlist.add(song);
-        return true;
+        Song checkedSong = this.songs.findSong(title);
+        if(checkedSong != null) {
+            playlist.add(checkedSong);
+            return true;
+        }
+        return false;
     }
 
-    private class SongList {
+    public static class SongList {
         private ArrayList<Song> songs;
 
-        public SongList() {
+        private SongList() {
             this.songs = new ArrayList<Song>();
         }
 
 
-        public boolean add(Song song) {
+        private boolean add(Song song) {
             if (songs.contains(song)) {
                 return false;
             }
