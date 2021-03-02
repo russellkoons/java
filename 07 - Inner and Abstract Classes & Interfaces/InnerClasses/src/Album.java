@@ -48,4 +48,12 @@ public class Album {
         playlist.add(song);
         return true;
     }
+
+    private class SongList {
+        private ArrayList<Song> songs;
+
+        public SongList() {
+            this.songs = new ArrayList<Song>();
+        }
+    }
 }
