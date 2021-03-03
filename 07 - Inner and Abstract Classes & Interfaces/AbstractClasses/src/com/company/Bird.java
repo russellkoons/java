@@ -1,6 +1,6 @@
 package com.company;
 
-public class Bird extends Animal {
+public abstract class Bird extends Animal {
     public Bird(String name) {
         super(name);
     }
@@ -14,4 +14,6 @@ public class Bird extends Animal {
     public void breathe() {
         System.out.println(getName() + " is breathing");
     }
+
+    public abstract void fly();
 }

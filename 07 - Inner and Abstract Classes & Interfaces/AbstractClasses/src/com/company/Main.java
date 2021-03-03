@@ -6,5 +6,9 @@ public class Main {
         Dog dog = new Dog("Yorkie");
         dog.breathe();
         dog.eat();
+
+        Bird bird = new Bird("Parrot");
+        bird.breathe();
+        bird.eat();
     }
 }
