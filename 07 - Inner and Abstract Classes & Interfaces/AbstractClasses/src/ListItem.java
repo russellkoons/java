@@ -3,6 +3,7 @@ public abstract class ListItem {
     protected ListItem leftLink = null;
 
     protected Object value;
+    // ass
 
     public ListItem(Object value) {
         this.value = value;
