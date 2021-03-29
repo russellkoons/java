@@ -16,6 +16,8 @@ public class Main {
     }
 
     private static void printDoubled(ArrayList n) {
-        
+        for (Object i : n) {
+            System.out.println((Integer) i * 2);
+        }
     }
 }
