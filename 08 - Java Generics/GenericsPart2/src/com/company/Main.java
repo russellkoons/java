@@ -9,15 +9,15 @@ public class Main {
 
         Team<FootballPlayer> adelaideCrows = new Team<>("Adelaide Crows");
         adelaideCrows.addPlayer(joe);
+        System.out.println(adelaideCrows.numPlayers());
 //        adelaideCrows.addPlayer(pat);
 //        adelaideCrows.addPlayer(beckham);
 
         Team<BaseballPlayer> chicagoCubs = new Team<>("Chicago Cubs");
         chicagoCubs.addPlayer(pat);
 
-        Team<String> brokenTeam = new Team<>("this won't work");
-        brokenTeam.addPlayer("no one");
+//        Team<String> brokenTeam = new Team<>("this won't work");
+//        brokenTeam.addPlayer("no one");
 
-        System.out.println(adelaideCrows.numPlayers());
     }
 }
