@@ -30,6 +30,6 @@ public class Main {
         hawthorn.matchResult(adelaideCrows, 3, 8);
 
         adelaideCrows.matchResult(fremantle, 2, 1);
-        adelaideCrows.matchResult(chicagoCubs, 1, 1);
+//        adelaideCrows.matchResult(chicagoCubs, 1, 1); This doesn't work because the teams have different types of players
     }
 }
