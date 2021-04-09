@@ -19,5 +19,8 @@ public class Main {
         Team<SoccerPlayer> brokenTeam = new Team<>("this won't work");
         brokenTeam.addPlayer(beckham);
 
+        Team<FootballPlayer> melbourne = new Team<>("Melboure");
+        FootballPlayer banks = new FootballPlayer("Gordon");
+        melbourne.addPlayer(banks);
     }
 }
