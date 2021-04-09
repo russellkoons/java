@@ -15,6 +15,9 @@ public class Main {
         Team<BaseballPlayer> chicagoCubs = new Team<>("Chicago Cubs");
         chicagoCubs.addPlayer(pat);
 
+        Team<String> brokenTeam = new Team<>("this won't work");
+        brokenTeam.addPlayer("no one");
+
         System.out.println(adelaideCrows.numPlayers());
     }
 }
