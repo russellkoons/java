@@ -9,8 +9,11 @@ public class Main {
 
         Team<FootballPlayer> adelaideCrows = new Team<>("Adelaide Crows");
         adelaideCrows.addPlayer(joe);
-        adelaideCrows.addPlayer(pat);
-        adelaideCrows.addPlayer(beckham);
+//        adelaideCrows.addPlayer(pat);
+//        adelaideCrows.addPlayer(beckham);
+
+        Team<BaseballPlayer> chicagoCubs = new Team<>("Chicago Cubs");
+        chicagoCubs.addPlayer(pat);
 
         System.out.println(adelaideCrows.numPlayers());
     }
