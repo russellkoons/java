@@ -31,5 +31,11 @@ public class Main {
 
         adelaideCrows.matchResult(fremantle, 2, 1);
 //        adelaideCrows.matchResult(chicagoCubs, 1, 1); This doesn't work because the teams have different types of players
+
+        System.out.println("Rankings");
+        System.out.println(adelaideCrows.getName() + ": " + adelaideCrows.ranking());
+        System.out.println(melbourne.getName() + ": " + melbourne.ranking());
+        System.out.println(fremantle.getName() + ": " + fremantle.ranking());
+        System.out.println(hawthorn.getName() + ": " + hawthorn.ranking());
     }
 }
