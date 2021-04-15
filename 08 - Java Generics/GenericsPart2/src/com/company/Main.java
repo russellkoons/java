@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -42,5 +45,8 @@ public class Main {
         System.out.println(adelaideCrows.compareTo(hawthorn));
         System.out.println(hawthorn.compareTo(adelaideCrows));
         System.out.println(melbourne.compareTo(fremantle));
+
+//        ArrayList<Team> teams;
+//        Collection.sort(teams); This will sort the teams based on the compareTo method we added
     }
 }
