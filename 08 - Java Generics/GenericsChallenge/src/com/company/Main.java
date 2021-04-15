@@ -3,8 +3,6 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // ArrayList<Team> teams;
-        // Collection.sort(teams); This will sort the teams based on the compareTo method we added
 
         League<Team<FootballPlayer>> footballLeague = new League<>("AFL");
 
@@ -23,7 +21,7 @@ public class Main {
         hawthorn.matchResult(fremantle, 1, 0);
         hawthorn.matchResult(adelaideCrows, 3, 8);
         adelaideCrows.matchResult(fremantle, 2, 1);
-        
+
         footballLeague.showLeagueTable();
     }
 }
