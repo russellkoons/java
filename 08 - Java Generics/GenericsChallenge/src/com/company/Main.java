@@ -18,5 +18,12 @@ public class Main {
         footballLeague.add(melbourne);
         footballLeague.add(hawthorn);
         footballLeague.add(fremantle);
+//        footballLeague.add(chicagoCubs); Does not work because it is not a football team
+
+        hawthorn.matchResult(fremantle, 1, 0);
+        hawthorn.matchResult(adelaideCrows, 3, 8);
+        adelaideCrows.matchResult(fremantle, 2, 1);
+        
+        footballLeague.showLeagueTable();
     }
 }
