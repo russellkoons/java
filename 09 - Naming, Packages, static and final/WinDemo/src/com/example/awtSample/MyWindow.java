@@ -16,4 +16,15 @@ public class MyWindow extends Frame {
             }
         });
     }
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        Font sansSerifLarge = new Font("SansSerif", Font.BOLD, 18);
+        Font sansSerifSmall = new Font("SansSerif", Font.BOLD, 12);
+        g.setFont(sansSerifLarge);
+        g.drawString("The Complete Java Developer Course", 60, 60);
+        g.setFont(sansSerifSmall);
+        g.drawString("By Tim Buchalka", 60, 100);
+    }
 }
