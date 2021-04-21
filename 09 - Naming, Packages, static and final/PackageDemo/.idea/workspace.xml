@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0237fa76-56b3-4849-8fe7-dcc7732019c2" name="Default Changelist" comment="" />
+    <list default="true" id="c476d1b1-90eb-4c42-b11f-de16f9d7f0bf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1rTXbangER74NymCDPi3lxGyVg1" />
+  <component name="ProjectId" id="1rTXlNc6f1rUSQHdhBQKpGPhYyV" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -65,8 +65,8 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.awtSample.Main" />
-      <module name="untitled104" />
+      <option name="MAIN_CLASS_NAME" value="com.example.mypackage.Main" />
+      <module name="PackageDemo" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -75,13 +75,14 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0237fa76-56b3-4849-8fe7-dcc7732019c2" name="Default Changelist" comment="" />
-      <created>1619001126439</created>
+      <changelist id="c476d1b1-90eb-4c42-b11f-de16f9d7f0bf" name="Default Changelist" comment="" />
+      <created>1619001203260</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1619001126439</updated>
+      <updated>1619001203260</updated>
     </task>
     <servers />
   </component>
