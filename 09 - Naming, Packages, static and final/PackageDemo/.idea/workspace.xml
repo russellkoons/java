@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c476d1b1-90eb-4c42-b11f-de16f9d7f0bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/example/game/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/game/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/game/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,6 +82,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/example/game" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
